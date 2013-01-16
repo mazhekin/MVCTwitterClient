@@ -1,0 +1,20 @@
+﻿@model IEnumerable<TweetSharp.TwitterStatus>
+
+@{
+    ViewBag.Title = "Tweets";
+}
+
+<h2>@ViewBag.Title</h2>
+
+@if (!Request.IsAuthenticated)
+{
+    <p>To see your tweets you need log in via twitter credentials.</p>
+}
+else
+{
+<div id="statuses">
+    @Html.Partial("_TwitterStatuses", Model)
+</div>
+<div class="progress"></div>
+<a href="javascript:void(0)" id="more" data-nextpage="2" data-url="@Url.Action("tweets", "home")">more...</a>
+}

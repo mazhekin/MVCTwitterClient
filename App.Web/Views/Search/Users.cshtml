@@ -1,0 +1,31 @@
+﻿@{
+    ViewBag.Title = "Search People";
+}
+
+<h2>@ViewBag.Title</h2>
+
+<span>@Html.ActionLink("Tweets", "index", "search", new { q = ViewBag.q }, null) |  @Html.ActionLink("People", "users", "search", new { q = ViewBag.q }, null)</span>
+
+<form id="searchForm" action="@Url.Action("users", "search")" method="get">
+	@Html.TextBox("q", (string)ViewBag.q, new { id = "search" })
+	<button class="button2" type="submit">Search</button>
+</form>
+
+@{ 
+    var twitterUsers = ViewBag.TwitterUsers as IEnumerable<TweetSharp.TwitterUser>; }
+@if (twitterUsers != null)
+{
+    <h3>People</h3>
+    if (twitterUsers.Any())
+    {
+        <div id="statuses">
+        @Html.Partial("_TwitterSearchUsers", twitterUsers)
+        </div>
+        <div class="progress"></div>
+        <a href="javascript:void(0)" id="more" data-nextpage="2" data-url="@Url.Action("tweets", "search", new { q = ViewBag.q })">more...</a>
+    }
+    else
+    {
+        <p>No users for @ViewBag.q</p>
+    }
+}

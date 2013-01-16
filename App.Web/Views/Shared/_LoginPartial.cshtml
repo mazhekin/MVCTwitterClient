@@ -1,0 +1,14 @@
+﻿@using App.Core;
+
+<span class="authInfo">
+@if (Request.IsAuthenticated) {
+    <text>
+        Hello, @(User.Identity.Name.Deserialize<TweetSharp.OAuthAccessToken>().ScreenName)!
+        @using (Html.BeginForm("Logout", "Home", FormMethod.Post, new { id = "logoutForm", @class = "logout" })) {
+            <a href="javascript:document.getElementById('logoutForm').submit()">Log off</a>
+        }
+    </text>
+} else {
+        @Html.ActionLink("Log in", "Login", "Home", routeValues: null, htmlAttributes: new { id = "loginLink", @class="login" })
+}
+</span>

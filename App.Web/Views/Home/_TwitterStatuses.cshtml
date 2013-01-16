@@ -1,0 +1,13 @@
+﻿@model IEnumerable<TweetSharp.TwitterStatus>
+
+@foreach (var item in Model)
+{
+    <div class="tweet">
+        <img src = "@item.User.ProfileImageUrl" alt = "@item.User.ScreenName" title = "@item.User.ScreenName" />
+        <a href="https://twitter.com/@(item.User.ScreenName)" class="author">
+            <span class="author">@item.User.Name</span>&nbsp;<span class="authorId">&#64;@item.User.ScreenName</span>
+        </a>
+        <div class="text">@Html.Raw(item.TextAsHtml)</div>
+    </div>
+}
+

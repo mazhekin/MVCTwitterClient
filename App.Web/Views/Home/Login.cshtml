@@ -1,0 +1,23 @@
+﻿@{
+    ViewBag.Title = "Pin";
+}
+
+<h2>Login via Twitter</h2>
+
+<a href="@ViewBag.AuthUrl" target="_blank">Go to get pin</a>
+
+@using (Html.BeginForm())
+{
+    <fieldset>
+        <legend>Enter Pin:</legend>
+		<div class="field">
+			<label for="Username">Pin:</label>
+			@Html.TextBox("pin")
+			@Html.ValidationMessage("pin", "!")
+		</div>
+		<div class="buttons">
+			<button type="submit">OK</button>
+		</div>
+        @Html.ValidationSummary()
+    </fieldset>
+}

@@ -1,0 +1,11 @@
+D:\Milena\TwitterClientSolution\App.Core\bin\Debug\App.Core.dll
+D:\Milena\TwitterClientSolution\App.Core\bin\Debug\App.Core.pdb
+D:\Milena\TwitterClientSolution\App.Core\bin\Debug\Hammock.ClientProfile.dll
+D:\Milena\TwitterClientSolution\App.Core\bin\Debug\Hammock.dll
+D:\Milena\TwitterClientSolution\App.Core\bin\Debug\Newtonsoft.Json.dll
+D:\Milena\TwitterClientSolution\App.Core\bin\Debug\TweetSharp.dll
+D:\Milena\TwitterClientSolution\App.Core\bin\Debug\Hammock.pdb
+D:\Milena\TwitterClientSolution\App.Core\bin\Debug\Newtonsoft.Json.xml
+D:\Milena\TwitterClientSolution\App.Core\bin\Debug\TweetSharp.pdb
+D:\Milena\TwitterClientSolution\App.Core\obj\Debug\App.Core.dll
+D:\Milena\TwitterClientSolution\App.Core\obj\Debug\App.Core.pdb

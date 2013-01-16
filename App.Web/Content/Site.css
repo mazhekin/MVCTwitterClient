@@ -1,0 +1,105 @@
+body
+{
+    font-size: .85em;
+    font-family: "Trebuchet MS", Verdana, Helvetica, Sans-Serif;
+    color: #232323;
+    background-color: #fff;
+}
+
+header,
+footer,
+nav,
+section {
+    display: block;
+}
+
+/* Styles for basic forms
+-----------------------------------------------------------*/
+
+/*fieldset 
+{
+    border:1px solid #ddd;
+    padding:0 1.4em 1.4em 1.4em;
+    margin:0 0 1.5em 0;
+}*/
+
+legend 
+{
+    font-size:1.2em;
+    font-weight: bold;
+}
+
+textarea 
+{
+    min-height: 75px;
+}
+
+.editor-label 
+{
+    margin: 1em 0 0 0;
+}
+
+.editor-field 
+{
+    margin:0.5em 0 0 0;
+}
+
+
+/* Styles for validation helpers
+-----------------------------------------------------------*/
+.field-validation-error
+{
+    color: #ff0000;
+}
+
+.field-validation-valid
+{
+    display: none;
+}
+
+.input-validation-error
+{
+    border: 1px solid #ff0000;
+    background-color: #ffeeee;
+}
+
+.validation-summary-errors
+{
+    font-weight: bold;
+    color: #ff0000;
+}
+
+.validation-summary-valid
+{
+    display: none;
+}
+
+
+/*My*/
+
+.main { width: 973px; padding: 0 58px; min-height:100%;	margin: 0 auto;	position: relative;	z-index:2; text-align: left; }
+.main{zoom: 1;}
+.main:after { content: " ";	display: block;	clear: both; height: 0;	visibility: hidden; }
+
+header { background-color: #eee; min-height: 60px; vertical-align:middle; width: 100%; position:relative; }
+header span.authInfo { margin-left: 10px; }
+header form fieldset { border-style:none; }
+header form.logout { display: inline; }
+header form.search { display: inline; }
+header form.search fieldset { width: 300px; float: right; }
+header form.search fieldset .findword { width: 200px; }
+
+div.menu {  vertical-align:bottom; bottom: 0; position:absolute; padding: 2px 2px 2px 2px; font-size:larger; }        
+div.menu span a { width: 120px; text-decoration: none; }
+
+.tweet { margin-bottom: 10px; clear: both; background-color: #eee; min-height: 56px; }
+.tweet img { float: left; width: 48px; height: 48px; margin: 4px 4px 4px 4px; }
+.tweet span.author { font-weight: bold; }
+.tweet a.author { text-decoration: none;  display:block; }
+.tweet span.author { color: #000; }
+.tweet span.author:hover { text-decoration: underline; }
+.tweet span.authorId { font-size:smaller; color: #999; }
+.tweet div.text { font-size:small; }
+        
+a#more { padding-bottom: 100px; }
+div.progress { background-image: url(/content/images/progress.gif); width: 32px; height: 32px; display: none; margin-bottom: 100px; }
